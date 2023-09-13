@@ -1,4 +1,5 @@
-import React from 'react';
+import React from "react";
+import styles from "./App.module.css";
 
 import BusinessList from './BusinessList';
 import SearchBar from './SearchBar';
@@ -7,12 +8,11 @@ import SearchBar from './SearchBar';
 const App = () => {
   
   return (
-  
-      <div>
+    <div className={styles.App}>
       <h1>Ravenous</h1>
       <SearchBar />
       <BusinessList />
-      </div>
+    </div>
      
   );
 };
