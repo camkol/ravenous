@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./App.module.css";
 
-import BusinessList from './BusinessList';
-import SearchBar from './SearchBar';
+import BusinessList from "./BusinessList";
+import SearchBar from "./SearchBar";
 
 const business = {
   imageSrc:
@@ -30,4 +30,3 @@ const App = () => {
 };
 
 export default App;
-

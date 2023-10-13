@@ -3,7 +3,7 @@ import styles from "./BusinessList.module.css";
 
 import Business from "./Business";
 
-const BusinessList = ({ businesses}) => {
+const BusinessList = ({ businesses }) => {
   return (
     <div className={styles.BusinessList}>
       {businesses.map((business) => {
@@ -13,4 +13,4 @@ const BusinessList = ({ businesses}) => {
   );
 };
 
-  export default BusinessList;
+export default BusinessList;
