@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import styles from "./SearchBar.module.css";
 
+import Yelp from "./Yelp";
+
 const sortByOptions = {
   "Best Match": "best_match",
   "Highest Rated": "rating",
@@ -57,20 +59,14 @@ const SearchBar = ({ searchYelp }) => {
     <div className={styles.SearchBar}>
       <div className={styles.SearchBarSortOptions}>
         <ul>{renderSortByOptions()} </ul>
-      </div>{" "}
+      </div>
       <form onSubmit={handleSearchClick}>
-        {" "}
         <div className={styles.SearchBarFields}>
           <input
             placeholder="Search Businesses"
-            value={searchTerm}
             onChange={handleSearchTermChange}
           />
-          <input
-            placeholder="Where?"
-            value={location}
-            onChange={handleLocationChange}
-          />
+          <input placeholder="Where?" onChange={handleLocationChange} />
         </div>
       </form>
       <div className={styles.SearchBarSubmit}>

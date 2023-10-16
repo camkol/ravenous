@@ -5,12 +5,12 @@ const Business = ({ business }) => {
   return (
     <div className={styles.Business}>
       <div className={styles.imageContainer}>
-        <img src={business.imageSrc} alt="" />
+        <img src={business.imageSrc} alt={business.name} />
       </div>
       <h2>{business.name}</h2>
       <div className={styles.BusinessInformation}>
         <div className={styles.BusinessAddress}>
-          <p>{business.address}</p>
+          <p>{business.address1}</p>
           <p>{business.city}</p>
           <p>{`${business.state} ${business.zipCode}`}</p>
         </div>
